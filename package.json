@@ -1,0 +1,16 @@
+{
+  "name": "enterprise-integration-case-study",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cd frontend && npm run dev",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "cypress:generate": "node cypress/auto-test-generator.js",
+    "cypress:run": "npm run cypress:generate && npx cypress run",
+    "cypress:open": "npm run cypress:generate && npx cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^12.17.4"
+  }
+}
